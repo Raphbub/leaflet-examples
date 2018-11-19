@@ -1,0 +1,42 @@
+<html>
+<head>
+  <!-- Encodage de la page -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Titre de la page -->
+  <title>Exemple vignette carte de base</title>
+
+  <!-- Ajout du css leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+  <!-- Ajout du javascript leaflet -->
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+  <!-- Ajout de l'extension Basemaps -> https://github.com/consbio/Leaflet.Basemaps -->
+  <link rel="stylesheet" href="./libs/L.Control.Basemaps.css" />
+  <script src="./libs/L.Control.Basemaps-min.js"></script>
+  <!-- Ajout css perso -->
+  <link rel="stylesheet" href="style_bm.css">
+  <script src="bat_unil.js" charset="utf-8"></script>
+</head>
+<body>
+
+  <h1>Exemple avec vignette pour sélectionner les couches de base</h1>
+
+  <div id="map"></div>
+  <div id="coords">Coordonnées de la souris : <b><span id="latlng"></span></b></div>
+  <p>Eléments de l'exemple</p>
+  <ul>
+    <li>Extension Basemaps</li>
+    <li>Ajout d'overlays (avec tooltip et popup)</li>
+    <li>Echelle</li>
+    <li>Evenements de souris (mousemove, mouseout, click)</li>
+    <li>Alerte (plusieurs doubles-clics) et confirmation (âge légal)</li>
+    <li>Changements d'attributs du <i>path</i></li>
+  </ul>
+  <script type="text/javascript" src="script_bm.js"></script>
+</body>
+</html>
